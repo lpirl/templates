@@ -27,7 +27,7 @@
 \setkomavar{backaddress}{\myname, \mystreetandhouse, \myzip~\mycity}
 \setkomavar{fromaddress}{\mystreetandhouse\\\myzip~\mycity}
 \setkomavar{signature}{\\\myname} % hack (cannot use sigbeforevskip here)
-\setkomavar*{enclseparator}{Anlagen}
+\setkomavar*{enclseparator}{Attachments}
 \setkomavar{place}{\mycity}
 
 % how to set & use custom variables:
