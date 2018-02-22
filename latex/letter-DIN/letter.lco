@@ -1,0 +1,58 @@
+% Template by Lukas Pirl <templates@lukas-pirl.de>, largely based on
+% "LaTeX Briefvorlage" by Jan-Philip Gehrcke <jgehrcke@googlemail.com>.
+
+\ProvidesFile{brief.lco}[letter-class-option file]
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% basic variables
+\newcommand{\myfirstname}{Mika}
+\newcommand{\mylastname}{Mustermensch}
+\newcommand{\myphone}{+49~123~456~78~90}
+\newcommand{\mymail}{mm@example.com}
+\newcommand{\mystreetandhouse}{Examplestr. 42a}
+\newcommand{\mycity}{Berlin}
+\newcommand{\myzip}{10999}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% compound variables
+\newcommand{\myname}{\myfirstname~\mylastname}
+\setkomavar{fromname}{\myname}
+\setkomavar{fromphone}[]{\myphone}
+\setkomavar{fromemail}[]{\mymail}
+\setkomavar{backaddress}{\myname, \mystreetandhouse, \myzip~\mycity}
+\setkomavar{fromaddress}{\mystreetandhouse\\\myzip~\mycity}
+\setkomavar{signature}{\\\myname} % hack (cannot use sigbeforevskip here)
+\setkomavar*{enclseparator}{Anlagen}
+\setkomavar{place}{\mycity}
+
+% how to set & use custom variables:
+%\newkomavar{key}
+%\setkomavar{key}{value}
+%\usekomavar{key}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% styling
+\KOMAoptions{
+    foldmarks=true,
+    fromalign=right,
+    footsepline=off,
+    fromemail=true,
+    fromphone=true,
+}
+
+\setkomafont{fromname}{\bfseries\color{black}}
+\setkomafont{fromaddress}{\color{gray}}
+\setkomafont{addressee}{\small}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% space before signature
+\@setplength{sigbeforevskip}{1cm}
+\endinput
