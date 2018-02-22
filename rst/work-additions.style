@@ -1,0 +1,16 @@
+styles:
+
+  ugly:
+    textColor: #FF0000
+
+  bad:
+    textColor: #FFAA00
+
+  check:
+    textColor: #AAFF00
+
+  question:
+    textColor: #00FFAA
+
+  removable:
+    textColor: #AAAAAA
