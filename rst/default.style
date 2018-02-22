@@ -1,0 +1,75 @@
+pageSetup:
+  size: A4
+  margin-top: 1.5cm
+  margin-bottom: 1.5cm
+  margin-left: 1.5cm
+  margin-right: 2cm
+  margin-gutter: 0cm
+  firstTemplate: oneColumn
+
+styles:
+
+  base:
+    fontName: stdFont
+    fontSize: 11
+    wordWrap: shrink
+    # ~fontSize*1.618:
+    leading: 17
+
+  blockquote:
+    parent: base
+    fontName: DejaVu-Sans-Mono
+    leftIndent: 25
+    leftIndent: 25
+    wordWrap: null
+    alignment: TA_LEFT
+
+  figure:
+    keepWithNext: true
+
+  title:
+    spaceAfter: 20
+    fontSize: 200%
+
+  heading1:
+    fontSize: 150%
+
+  subtitle:
+    alignment: TA_LEFT
+
+  header:
+    textColor: #808080
+    alignment: TA_RIGHT
+
+  footer:
+    textColor: #808080
+    alignment: TA_RIGHT
+
+  footer-r:
+    parent: footer
+    alignment: TA_RIGHT
+
+  footer-c:
+    parent: footer
+    alignment: TA_CENTER
+
+  footer-l:
+    parent: footer
+    alignment: TA_LEFT
+    
+  marginal:
+    textColor: #808080
+
+  table:
+    commands: []
+      [INNERGRID, [ 0, 0 ], [ -1, -1 ], 0, transparent ]
+      [BOX, [ 0, 0 ], [ -1, -1 ], 0, transparent ]
+      [ "VALIGN", [ 0, 0 ], [ -1, -1 ], "TOP" ]
+
+  bullet-list:
+    spaceBefore: 2
+    spaceAfter: 2
+
+  item-list:
+    spaceBefore: 2
+    spaceAfter: 2
