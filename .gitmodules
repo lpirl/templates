@@ -1,0 +1,3 @@
+[submodule "presentation/_themes"]
+	path = presentation/_themes
+	url = git@github.com:lpirl/hieroglyph-themes.git
