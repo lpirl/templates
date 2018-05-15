@@ -19,6 +19,7 @@ styles:
   blockquote:
     parent: base
     fontName: DejaVu-Sans-Mono
+    fontSize: 8
     leftIndent: 25
     leftIndent: 25
     wordWrap: null
