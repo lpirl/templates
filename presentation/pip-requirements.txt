@@ -1,3 +1,0 @@
-hieroglyph
-sphinx-autobuild
-graphviz
