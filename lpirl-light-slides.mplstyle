@@ -22,8 +22,8 @@ font.family: Ubuntu, sans
 axes.facecolor: none
 
 # axes themselves
-axes.edgecolor: 000000
-axes.linewidth: .1
+axes.edgecolor: 757575
+axes.linewidth: 2
 
 axes.grid: True
 axes.labelcolor: black
@@ -41,6 +41,9 @@ axes.ymargin: .01
 #  are used for the diagrams regularly used)
 axes.prop_cycle: cycler('color', ['077cc0', '018571', 'c65301', '9e3dff', '9e3dff', '008837', 'eb0027', 'd42b93', '000000', '757575'])
 
+lines.linewidth: 4
+lines.markerfacecolor: none
+
 # tick label colors
 xtick.color: 000000
 ytick.color: 000000
@@ -50,5 +53,5 @@ xtick.direction: out
 ytick.direction: out
 
 grid.color: 757575
-grid.linewidth: .1
+grid.linewidth: 1
 grid.linestyle: :
