@@ -1,4 +1,6 @@
-A collection of maybe reusable document templates.
+Deprecated. Document templates moved:
 
-For ODF files, why don't we use the template file format (ODT), you ask?
-Because the uncompressed ODF files (i.e., XML) play more nicely with git.
+- slides: https://gitlab.com/lpirl/slides-public
+- DIN letter: https://gitlab.com/lpirl/din-letter
+- document themes: https://gitlab.com/lpirl/theme
+- shared expenses: https://gitlab.com/lpirl/shared-expenses-spreadsheet
